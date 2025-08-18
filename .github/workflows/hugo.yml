@@ -11,7 +11,11 @@ jobs:
     permissions:
       contents: write  # Grant write access to repository contents
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # Fetch theme submodules
+          fetch-depth: 0  # Full history to ensure submodules are resolved
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
