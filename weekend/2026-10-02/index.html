@@ -175,44 +175,32 @@
     .compact p { margin: 0; color: var(--muted); font-size: .88rem; }
     .compact .details-link { white-space: nowrap; }
     .school-promo {
-      margin: 24px 0 30px;
-      padding: 24px 26px;
+      margin: 18px 0 0;
+      padding: 22px 24px;
       display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr);
-      gap: 28px;
+      grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
+      gap: 24px;
       align-items: center;
-      color: #fffaf1;
-      background: #9e3025;
-      border-radius: 8px 28px 8px 28px;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      box-shadow: none;
     }
-    .school-promo::after {
-      content: "文";
-      position: absolute;
-      right: 25%;
-      bottom: -76px;
-      color: rgba(255,255,255,.07);
-      font: 700 12rem/1 "Noto Serif SC", serif;
-      pointer-events: none;
-    }
-    .promo-label { margin: 0 0 8px; color: #ffd98a; font-size: .78rem; font-weight: 700; letter-spacing: .08em; }
-    .school-promo h2 { margin: 0; font: 700 clamp(1.9rem, 4vw, 3.2rem)/1.1 "Noto Serif SC", serif; }
-    .school-slogan { margin: 7px 0 16px; font: 600 1.02rem/1.45 "Noto Serif SC", serif; color: #ffe9c0; }
-    .school-lead { margin: 0; max-width: 38rem; font-size: .94rem; color: rgba(255,255,255,.88); }
+    .promo-label { margin: 0 0 8px; color: var(--accent-ink); font-size: .78rem; font-weight: 700; letter-spacing: .03em; }
+    .sponsor-tag { display: inline-flex; align-items: center; min-height: 25px; margin-right: 8px; padding: 2px 9px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 12%, var(--paper)); color: var(--accent-ink); letter-spacing: .06em; }
+    .school-promo h2 { margin: 0; font: 700 clamp(1.45rem, 3vw, 1.9rem)/1.2 "Noto Serif SC", serif; }
+    .school-slogan { margin: 6px 0 14px; font: 600 .98rem/1.45 "Noto Serif SC", serif; color: var(--accent-ink); }
+    .school-lead { margin: 0; max-width: 38rem; font-size: .92rem; color: var(--muted); }
     .school-details {
-      position: relative;
-      z-index: 1;
-      padding: 17px 18px;
-      background: rgba(49, 11, 8, .28);
-      border: 1px solid rgba(255,255,255,.22);
-      border-radius: 14px;
+      padding: 16px 17px;
+      background: var(--soft);
+      border-radius: 12px;
     }
     .school-details ul { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 7px; font-size: .86rem; }
     .school-details li { display: grid; grid-template-columns: 72px 1fr; gap: 8px; }
-    .school-details li strong { color: #ffd98a; }
-    .school-contact { margin: 0 0 14px; font-size: .78rem; color: rgba(255,255,255,.8); overflow-wrap: anywhere; }
+    .school-details li strong { color: var(--accent-ink); }
+    .school-contact { margin: 0 0 14px; font-size: .78rem; color: var(--muted); overflow-wrap: anywhere; }
     .school-contact a { text-decoration: none; }
     .school-contact a:hover { text-decoration: underline; text-underline-offset: 3px; }
     .promo-button {
@@ -228,6 +216,7 @@
       text-decoration: none;
     }
     .promo-button:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .school-promo .promo-button { background: var(--accent); color: #fff; }
     .lomorage-promo {
       margin-top: 28px;
       padding: 20px 24px;
@@ -314,24 +303,6 @@
       </div>
     </section>
 
-    <aside class="school-promo" aria-labelledby="school-title">
-      <div>
-        <p class="promo-label">10 月 5 日（周一）开课 · 招生中</p>
-        <h2 id="school-title">文韬中文</h2>
-        <p class="school-slogan">传承中华文化　启迪美好未来</p>
-        <p class="school-lead">小班中文课，$30/小时含材料费；兄弟姐妹报名限时 9 折。周日上午 Zoom 网课还有名额。</p>
-      </div>
-      <div class="school-details">
-        <ul>
-          <li><strong>L1–L2</strong><span>中文 0 基础 · 每周二 4:30–5:30</span></li>
-          <li><strong>L3–L4</strong><span>有中文基础 · 每周一、周四 4:30–5:30</span></li>
-          <li><strong>Zoom</strong><span>周日上午 · 还有名额</span></li>
-        </ul>
-        <p class="school-contact"><a href="mailto:wentaoacademy@gmail.com">wentaoacademy@gmail.com</a>　/　<a href="tel:+16692138761">669-213-8761</a></p>
-        <a class="promo-button" href="https://docs.google.com/forms/d/e/1FAIpQLSebGZjr2PZ7JZaNkEhT_kssVF-IVrZAhg1HRaUWJrUEO6Z_rg/viewform?pli=1" target="_blank" rel="noopener">立即报名 <span aria-hidden="true">↗</span></a>
-      </div>
-    </aside>
-
     <section class="quick-picks" aria-label="快速推荐">
       <div class="pick"><small>最有秋意</small><strong>Bishop’s Pumpkin Farm：从早玩到晚</strong></div>
       <div class="pick"><small>免费亲子</small><strong>周六 Fremont Park 健康节</strong></div>
@@ -402,6 +373,24 @@
           </div>
         </article>
       </div>
+
+      <aside class="school-promo" aria-labelledby="school-title">
+        <div>
+          <p class="promo-label"><span class="sponsor-tag">招生</span>10 月 5 日（周一）开课</p>
+          <h2 id="school-title">文韬中文 · 小班中文课</h2>
+          <p class="school-slogan">传承中华文化　启迪美好未来</p>
+          <p class="school-lead">$30/小时含材料费；兄弟姐妹报名限时 9 折。周日上午 Zoom 网课还有名额。</p>
+        </div>
+        <div class="school-details">
+          <ul>
+            <li><strong>L1–L2</strong><span>中文 0 基础 · 每周二 4:30–5:30</span></li>
+            <li><strong>L3–L4</strong><span>有中文基础 · 每周一、周四 4:30–5:30</span></li>
+            <li><strong>Zoom</strong><span>周日上午 · 还有名额</span></li>
+          </ul>
+          <p class="school-contact"><a href="mailto:wentaoacademy@gmail.com">wentaoacademy@gmail.com</a>　/　<a href="tel:+16692138761">669-213-8761</a></p>
+          <a class="promo-button" href="https://docs.google.com/forms/d/e/1FAIpQLSebGZjr2PZ7JZaNkEhT_kssVF-IVrZAhg1HRaUWJrUEO6Z_rg/viewform?pli=1" target="_blank" rel="noopener">立即报名 <span aria-hidden="true">↗</span></a>
+        </div>
+      </aside>
 
       <div class="card-wall">
         <article class="event-card" data-tags="fri sat sun night">
