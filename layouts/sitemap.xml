@@ -1,0 +1,13 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ range .Site.Pages }}
+  <url><loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>{{ end }}</url>
+  {{ end }}
+  <!-- 手工页面：static/ 下的文件不在 Hugo 页面索引中，需手动维护。
+       周末页每新增一期存档（static/weekend/YYYY-MM-DD/），在此加一行对应的 <url>，
+       并把本文件的 lastmod 更新为发布日期。 -->
+  <url><loc>https://wtao.top/schools/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://wtao.top/weekend/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://wtao.top/weekend/archive/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://wtao.top/weekend/2026-10-02/</loc><lastmod>2026-10-02</lastmod></url>
+</urlset>
