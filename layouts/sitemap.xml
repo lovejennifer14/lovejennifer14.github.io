@@ -7,7 +7,8 @@
        周末页每新增一期存档（static/weekend/YYYY-MM-DD/），在此加一行对应的 <url>，
        并把本文件的 lastmod 更新为发布日期。 -->
   <url><loc>https://wtao.top/schools/</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://wtao.top/weekend/</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://wtao.top/weekend/archive/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://wtao.top/weekend/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://wtao.top/weekend/archive/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://wtao.top/weekend/2026-10-02/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://wtao.top/weekend/2026-10-09/</loc><lastmod>2026-10-09</lastmod></url>
 </urlset>
