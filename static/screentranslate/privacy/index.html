@@ -39,19 +39,20 @@ h2:target { background: var(--code); }
 <p>This page is published at <a href="https://wtao.top/screentranslate/privacy">https://wtao.top/screentranslate/privacy</a>. It matches what we declare in the Data safety section of each app's Google Play listing.</p>
 <h2>The short version</h2>
 <ul>
-<li><strong>Translation on your phone stays on your phone.</strong> In normal mode, text recognition (OCR) and translation run on your device. Your screen content and screenshots are not sent anywhere.</li>
-<li><strong>AI Mode is optional.</strong> It's available in both apps. If you turn it on and enter your own Zhipu AI API key, the recognized text is sent to Zhipu AI (in China) to be translated. We don't receive or store that text.</li>
+<li><strong>Translation on your phone stays on your phone.</strong> In Quick and AI Enhanced modes, text recognition (OCR) and translation run on your device. Your screen content and screenshots are not sent anywhere.</li>
+<li><strong>Cloud AI mode is optional.</strong> It's available in both apps. If you turn it on and enter your own Zhipu AI API key, the recognized text is sent to Zhipu AI (in China) to be translated. We don't receive or store that text.</li>
+<li>Quick and AI Enhanced modes run entirely on your device; only Cloud AI mode sends text off the device.</li>
 <li><strong>We use Google Firebase</strong> for usage analytics and crash reports. This includes app-install identifiers and an approximate location worked out from your IP address. Version 1.2.5 of the paid app can also access the Android Advertising ID through Firebase. We use it only for analytics, never for ads, and the next update removes it. Lite does not access it.</li>
 <li><strong>No ads, no accounts, and we don't sell your data.</strong> We don't use your data for advertising.</li>
 <li><strong>You can ask us to delete your data</strong> by emailing <a href="mailto:support@wtao.top?subject=Data%20deletion%20request">support@wtao.top</a>. See <a href="#delete-data">How to request deletion of your data</a>.</li>
 </ul>
 <h2>1. What stays on your device</h2>
 <ul>
-<li><strong>Your screen content.</strong> The app needs to see what's on your screen to translate it. The screen text, and any screen images the app captures, are processed on your device and never leave it. Not to us, and not to anyone else. The only exception is AI Mode, if you turn it on: then the recognized text (not the image) is sent to Zhipu AI (see section 2).</li>
-<li><strong>Translations in normal mode.</strong> Text recognition and translation run on your device. The text-recognition model is built into the app. Language packs are downloaded once from Hugging Face (huggingface.co), and some models are downloaded from Google through ML Kit. Those downloads don't include any of your content.</li>
+<li><strong>Your screen content.</strong> The app needs to see what's on your screen to translate it. The screen text, and any screen images the app captures, are processed on your device and never leave it. Not to us, and not to anyone else. The only exception is Cloud AI mode, if you turn it on: then the recognized text (not the image) is sent to Zhipu AI (see section 2).</li>
+<li><strong>Translations in Quick and AI Enhanced modes.</strong> Text recognition and translation run on your device. The text-recognition model is built into the app. Language packs are downloaded once from Hugging Face (huggingface.co), and some models are downloaded from Google through ML Kit. Those downloads don't include any of your content.</li>
 <li><strong>Your settings</strong>, such as language choices and modes.</li>
 <li><strong>Your Pro unlock status (Lite).</strong> It is checked on your device and stored there.</li>
-<li><strong>Your Zhipu API key</strong> (only if you use AI Mode). It is stored only on your device. It is sent only to Zhipu, with each AI Mode request, so Zhipu can process the request under your own Zhipu account. We never receive it.</li>
+<li><strong>Your Zhipu API key</strong> (only if you use Cloud AI mode). It is stored only on your device. It is sent only to Zhipu, with each Cloud AI mode request, so Zhipu can process the request under your own Zhipu account. We never receive it.</li>
 </ul>
 <p><strong>No user accounts.</strong> You don't sign up or log in to use either app, and we don't ask for your name, email address or phone number. The optional Zhipu API key belongs to your own account with Zhipu AI. It is not an account with us.</p>
 <h2>2. What we collect</h2>
@@ -103,11 +104,11 @@ h2:target { background: var(--code); }
 <td>Yes</td>
 </tr>
 <tr>
-<td><strong>Text you choose to translate in AI Mode</strong></td>
-<td>The text recognized on your screen, when AI Mode is on</td>
+<td><strong>Text you choose to translate in Cloud AI mode</strong></td>
+<td>The text recognized on your screen, when Cloud AI mode is on</td>
 <td>Zhipu AI (open.bigmodel.cn)</td>
 <td>App functionality (translation)</td>
-<td><strong>Optional.</strong> Only if you turn on AI Mode and enter your own API key</td>
+<td><strong>Optional.</strong> Only if you turn on Cloud AI mode and enter your own API key</td>
 </tr>
 <tr>
 <td><strong>Purchase history (Lite only)</strong></td>
@@ -132,7 +133,7 @@ h2:target { background: var(--code); }
 <h2>3. How we use data</h2>
 <p>We use the data above only to:</p>
 <ul>
-<li><strong>Make the app work:</strong> translate text in AI Mode when you ask for it, deliver app settings through Remote Config, and unlock Pro in Lite.</li>
+<li><strong>Make the app work:</strong> translate text in Cloud AI mode when you ask for it, deliver app settings through Remote Config, and unlock Pro in Lite.</li>
 <li><strong>Understand how the app is used</strong>, in aggregate, so we can decide what to improve.</li>
 <li><strong>Find and fix crashes and bugs.</strong></li>
 <li><strong>Meet legal obligations</strong>, such as tax records for purchases.</li>
@@ -174,9 +175,9 @@ h2:target { background: var(--code); }
 <td><a href="https://huggingface.co/privacy">https://huggingface.co/privacy</a></td>
 </tr>
 <tr>
-<td>Zhipu AI open platform (open.bigmodel.cn), in both apps, only in AI Mode</td>
+<td>Zhipu AI open platform (open.bigmodel.cn), in both apps, only in Cloud AI mode</td>
 <td>Beijing Zhipu Huazhang Technology Co., Ltd. (Zhipu AI), China</td>
-<td>Translates the text you send in AI Mode</td>
+<td>Translates the text you send in Cloud AI mode</td>
 <td><a href="https://docs.bigmodel.cn/cn/terms/privacy-policy">https://docs.bigmodel.cn/cn/terms/privacy-policy</a></td>
 </tr>
 </tbody>
@@ -191,18 +192,18 @@ h2:target { background: var(--code); }
 <li><strong>Google's access:</strong> Google may access the data only to give us technical support and to provide recommendations.</li>
 </ul>
 </li>
-<li><strong>Zhipu AI.</strong> When you use AI Mode in either app, the recognized text is shared with Zhipu AI, a third party, so it can translate it. The request uses your own API key, under your own Zhipu account. Zhipu's terms and privacy policy apply to that text, including how long Zhipu keeps it. The text goes straight from your device to Zhipu. We don't receive it or store it on our servers. If you don't want text sent to Zhipu, leave AI Mode off.</li>
+<li><strong>Zhipu AI.</strong> When you use Cloud AI mode in either app, the recognized text is shared with Zhipu AI, a third party, so it can translate it. The request uses your own API key, under your own Zhipu account. Zhipu's terms and privacy policy apply to that text, including how long Zhipu keeps it. The text goes straight from your device to Zhipu. We don't receive it or store it on our servers. If you don't want text sent to Zhipu, leave Cloud AI mode off.</li>
 <li><strong>Legal reasons.</strong> We may disclose information if the law requires it, or to protect our rights or users' safety.</li>
 <li><strong>Business transfers.</strong> If WTAO LLC is sold or merges with another company, this policy will continue to apply to data collected under it.</li>
 </ul>
-<p><strong>International transfers.</strong> Google and Hugging Face may process data in the United States and other countries. AI Mode text is sent to Zhipu AI in China. Data protection laws in those countries may differ from those where you live.</p>
+<p><strong>International transfers.</strong> Google and Hugging Face may process data in the United States and other countries. Cloud AI mode text is sent to Zhipu AI in China. Data protection laws in those countries may differ from those where you live.</p>
 <h2>6. How long data is kept</h2>
 <ul>
 <li><strong>Firebase Analytics:</strong> event data is kept for 2 months. User-level data is kept for up to 14 months after your last activity in the app, and new activity restarts that period. Aggregated reports that don't identify you may be kept longer.</li>
 <li><strong>Firebase Crashlytics:</strong> crash traces and their IDs are kept for 90 days, after which Google begins deleting them.</li>
 <li><strong>Firebase installation IDs</strong> (used by Remote Config) are kept until they are deleted, for example when you make a deletion request.</li>
 <li><strong>Purchase records:</strong> Google Play keeps them under Google's policies. We keep order records only as long as tax and accounting law requires.</li>
-<li><strong>AI Mode text:</strong> we don't keep it. Zhipu keeps it according to its own policy.</li>
+<li><strong>Cloud AI mode text:</strong> we don't keep it. Zhipu keeps it according to its own policy.</li>
 <li><strong>Data on your device</strong> stays until you clear the app's data or uninstall the app.</li>
 <li><strong>Emails you send us</strong> are kept as long as we need them to handle your request.</li>
 </ul>
@@ -217,7 +218,7 @@ h2:target { background: var(--code); }
 <p><strong>On your device:</strong>
 - <strong>Clear app data:</strong> go to Android Settings → Apps → [app name] → Storage → Clear data. This deletes your settings and your saved Zhipu API key from the device. It also resets the app's Firebase IDs, so new analytics data won't be linked to your old data. In Lite, you can restore Pro afterwards through Google Play.
 - <strong>Uninstall the app:</strong> this removes everything the app stored on your device and stops all further collection.
-- <strong>Leave AI Mode off,</strong> or remove your API key, to stop text being sent to Zhipu.</p>
+- <strong>Leave Cloud AI mode off,</strong> or remove your API key, to stop text being sent to Zhipu.</p>
 <p>Clearing data or uninstalling doesn't delete data that has already been sent to Firebase. That data is deleted at the end of the retention periods in section 6, or sooner if you email us. To delete data held by Zhipu, use the options in Zhipu's privacy policy.</p>
 <h2>8. Your rights</h2>
 <p>Depending on where you live, you may have the right to:</p>
@@ -233,7 +234,7 @@ h2:target { background: var(--code); }
 <p><strong>EU, EEA and UK (GDPR).</strong> WTAO LLC is the controller of the data described here. We rely on:</p>
 <ul>
 <li>our <strong>legitimate interests</strong> for analytics and crash reports, so we can keep the app working and improve it</li>
-<li><strong>performing our contract with you</strong> for purchases and for AI Mode, which you ask for</li>
+<li><strong>performing our contract with you</strong> for purchases and for Cloud AI mode, which you ask for</li>
 <li><strong>legal obligations</strong> for tax records</li>
 </ul>
 <p>You can also complain to your local data protection authority.</p>
@@ -249,7 +250,7 @@ h2:target { background: var(--code); }
 <p>The apps are for people aged <strong>13 and older</strong>. They are not directed at children under 13, and we don't knowingly collect data from children under 13. If you think a child under 13 has used the app and data was collected, email <a href="mailto:support@wtao.top?subject=Data%20deletion%20request">support@wtao.top</a> and we will delete it.</p>
 <h2>10. Security</h2>
 <ul>
-<li>Everything the app sends or downloads goes over encrypted connections (HTTPS). That covers Firebase, Zhipu AI (open.bigmodel.cn) in AI Mode, language packs from Hugging Face, and ML Kit model downloads from Google.</li>
+<li>Everything the app sends or downloads goes over encrypted connections (HTTPS). That covers Firebase, Zhipu AI (open.bigmodel.cn) in Cloud AI mode, language packs from Hugging Face, and ML Kit model downloads from Google.</li>
 <li>Access to our Firebase and Google Play consoles is limited to the people who need it.</li>
 </ul>
 <p>No system is perfectly secure, but we keep the data we handle to a minimum.</p>
