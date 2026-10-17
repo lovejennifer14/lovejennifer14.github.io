@@ -39,7 +39,7 @@ h2:target { background: var(--code); }
 <p>This page is published at <a href="https://wtao.top/screentranslate/privacy">https://wtao.top/screentranslate/privacy</a>. It matches what we declare in the Data safety section of each app's Google Play listing.</p>
 <h2>The short version</h2>
 <ul>
-<li><strong>Translation on your phone stays on your phone.</strong> In normal mode, text recognition (OCR) and translation run on your device. Your screen content and screenshots are not sent anywhere.</li>
+<li><strong>Translation on your phone stays on your phone.</strong> In Quick and AI Enhanced modes, text recognition (OCR) and translation run on your device. Your screen content and screenshots are not sent anywhere.</li>
 <li><strong>Cloud AI mode is optional.</strong> It's available in both apps. If you turn it on and enter your own Zhipu AI API key, the recognized text is sent to Zhipu AI (in China) to be translated. We don't receive or store that text.</li>
 <li>Quick and AI Enhanced modes run entirely on your device; only Cloud AI mode sends text off the device.</li>
 <li><strong>We use Google Firebase</strong> for usage analytics and crash reports. This includes app-install identifiers and an approximate location worked out from your IP address. Version 1.2.5 of the paid app can also access the Android Advertising ID through Firebase. We use it only for analytics, never for ads, and the next update removes it. Lite does not access it.</li>
@@ -49,7 +49,7 @@ h2:target { background: var(--code); }
 <h2>1. What stays on your device</h2>
 <ul>
 <li><strong>Your screen content.</strong> The app needs to see what's on your screen to translate it. The screen text, and any screen images the app captures, are processed on your device and never leave it. Not to us, and not to anyone else. The only exception is Cloud AI mode, if you turn it on: then the recognized text (not the image) is sent to Zhipu AI (see section 2).</li>
-<li><strong>Translations in normal mode.</strong> Text recognition and translation run on your device. The text-recognition model is built into the app. Language packs are downloaded once from Hugging Face (huggingface.co), and some models are downloaded from Google through ML Kit. Those downloads don't include any of your content.</li>
+<li><strong>Translations in Quick and AI Enhanced modes.</strong> Text recognition and translation run on your device. The text-recognition model is built into the app. Language packs are downloaded once from Hugging Face (huggingface.co), and some models are downloaded from Google through ML Kit. Those downloads don't include any of your content.</li>
 <li><strong>Your settings</strong>, such as language choices and modes.</li>
 <li><strong>Your Pro unlock status (Lite).</strong> It is checked on your device and stored there.</li>
 <li><strong>Your Zhipu API key</strong> (only if you use Cloud AI mode). It is stored only on your device. It is sent only to Zhipu, with each Cloud AI mode request, so Zhipu can process the request under your own Zhipu account. We never receive it.</li>
