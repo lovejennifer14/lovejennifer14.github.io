@@ -6,5 +6,6 @@ Live boldly, work with purpose, and weave every goal into a greater masterpiece.
 
 - [Weekend](/weekend/) — 周末活动精选，Sacramento / Granite Bay 周边，每周更新
 - [Schools](/schools/) — Eureka 学区校园活动，Granite Bay / Roseville，每周更新
+- [Wentao](/wentao/) — 文韬中文小班课，$30/小时含材料费，每周开课
 - [Lomorage](/lomorage/) — A home for your family's photos. No cloud, no subscription.
 - [ScreenTranslate](/screentranslate/) — Overlay translator for Android: manga, games, and more.
